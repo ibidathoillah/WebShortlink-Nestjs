@@ -2,10 +2,22 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ShortLinkModule } from '../shortlink/shortlink.module';
 import { AuthModule } from 'src/auth/auth.module';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import configuration from 'src/config/configuration';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://ibidathoillah:admin123@ds147354.mlab.com:47354/shortlink'),
+    ConfigModule.forRoot({
+      envFilePath: '.env.development',
+      load: [configuration],
+    }),
+    MongooseModule.forRootAsync({
+      imports: [ConfigModule],
+      useFactory: async (configService: ConfigService) => ({        
+        uri: configService.get<string>('database.mongodbUrl', 'localhost'),
+      }),
+      inject: [ConfigService],
+    }),
     AuthModule,
     ShortLinkModule,
 ]
