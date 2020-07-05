@@ -17,6 +17,9 @@ Create simple bit.ly clone with some rules :
 - Mongodb
 - node js (can use framework like nextjs or nestjs or any other nodejs framework
 
+# See Also Shorlink Dashboard
+https://github.com/ibidathoillah/shortlink-dashboard
+
 ## Installation
 
 ```bash
