@@ -18,7 +18,7 @@ Simple bit.ly clone with features :
 - node js (can use framework like nextjs or nestjs or any other nodejs framework
 
 # See Also Shorlink Dashboard
-[https://github.com/ibidathoillah/shortlink-dashboard](https://github.com/ibidathoillah?tab=repositories#:~:text=WebSortlink%2DReact%2DAntDesign)
+https://github.com/ibidathoillah/shortlink-dashboard
 
 ## Installation
 
