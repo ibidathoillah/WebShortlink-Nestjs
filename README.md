@@ -3,7 +3,7 @@
 ## Description
 ### Fullstack url shortener
 
-Create simple bit.ly clone with some rules :
+Simple bit.ly clone with features :
 
 - the output link should be unique and random by default
 - maximum generated links (last path) is 10 chartacters
@@ -18,7 +18,7 @@ Create simple bit.ly clone with some rules :
 - node js (can use framework like nextjs or nestjs or any other nodejs framework
 
 # See Also Shorlink Dashboard
-https://github.com/ibidathoillah/shortlink-dashboard
+[https://github.com/ibidathoillah/shortlink-dashboard](https://github.com/ibidathoillah?tab=repositories#:~:text=WebSortlink%2DReact%2DAntDesign)
 
 ## Installation
 
